@@ -58,6 +58,7 @@
 </template>
 <script>
 import axios from "axios";
+import "datatables.net-responsive-dt";
 
 export default {
     data() {
@@ -75,7 +76,9 @@ export default {
             }
         },
         initializeDataTable() {
-            $("#productTable").DataTable();
+            $("#productTable").DataTable({
+                // responsive: true,
+            });
         },
     },
     async created() {
