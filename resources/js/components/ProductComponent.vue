@@ -77,7 +77,7 @@ export default {
         },
         initializeDataTable() {
             $("#productTable").DataTable({
-                // responsive: true,
+                responsive: true,
             });
         },
     },

@@ -9,7 +9,7 @@
 
 <body id="app">
     <div class="py-4">
-        <product-component></product-component>
+        @yield('content')
     </div>
 </body>
 <script src="{{ mix('js/app.js') }}"></script>
